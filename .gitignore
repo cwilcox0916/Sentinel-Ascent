@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+app/dist/
+app/dist-ssr/
+app/build/
+
+# Tauri build output
+app/src-tauri/target/
+app/src-tauri/gen/
+
+# Vite cache
+.vite/
+*.tsbuildinfo
+
+# Test artifacts
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local env / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Docs source assets (kept in repo via explicit paths if needed)
+
+# Plans
+.claude/
+
+# Local-only saves
+sentinel-ascent-save-*.json

@@ -1,0 +1,37 @@
+/*
+ * Shell layout. Locked source: docs/my_game/10-design-system.md §4 (PC) + §5 (tablet)
+ */
+
+.shell {
+  display: grid;
+  grid-template-columns: 72px 1fr 400px;
+  grid-template-rows: 52px 1fr 88px;
+  grid-template-areas:
+    "top   top    top"
+    "rail  stage  panel"
+    "rail  dock   panel";
+  height: 100vh;
+  width: 100vw;
+  background:
+    radial-gradient(1400px 900px at 50% 55%, #0e1626 0%, #07090f 60%, #05070c 100%);
+}
+
+.shell > .topbar { grid-area: top; }
+.shell > .rail { grid-area: rail; }
+.shell > .stage { grid-area: stage; }
+.shell > .bottom-dock { grid-area: dock; }
+.shell > .panel { grid-area: panel; }
+
+@media (max-width: 1279px) {
+  .shell {
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: 48px 1fr 280px;
+    grid-template-areas:
+      "top   top"
+      "rail  stage"
+      "panel panel";
+  }
+  .shell > .bottom-dock {
+    display: none !important;
+  }
+}

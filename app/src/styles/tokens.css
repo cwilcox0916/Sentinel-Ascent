@@ -1,0 +1,56 @@
+/*
+ * Sentinel Ascent — Design Tokens
+ * Locked source of truth: docs/my_game/10-design-system.md §2
+ * Do not hardcode colors anywhere else in the codebase. Add a token here first.
+ */
+
+:root {
+  /* Surface */
+  --bg-0: #07090f;
+  --bg-1: #0b0f18;
+  --bg-2: #101624;
+  --bg-3: #16203288;
+  --panel: #0c1220cc;
+  --panel-solid: #0c1220;
+
+  /* Lines */
+  --line: #1a2436;
+  --line-bright: #243049;
+  --line-hot: #2d3b58;
+
+  /* Text */
+  --fg: #d8e3f5;
+  --fg-dim: #8fa0bf;
+  --fg-mute: #5a6a86;
+  --fg-faint: #3d4a64;
+
+  /* Identity */
+  --cyan: #6ee7ff;
+  --cyan-dim: #2fb9d6;
+  --cyan-glow: #6ee7ff55;
+
+  /* Currencies (each one fixed; do not reuse for non-currency UI) */
+  --scrip: #b6c3db;
+  --alloy: #f3c34a;
+  --prism: #6ee79d;
+  --catalyst: #e96bd6;
+  --insignia: #7bb8ff;
+  --core: #ff8a5c;
+  --cipher: #c6b37a;
+
+  /* Threat */
+  --threat: #ff5a6e;
+  --threat-hot: #ff2f79;
+  --elite: #ff8c42;
+  --fleet: #ff3dc2;
+
+  /* Effects */
+  --damage-amp: #f3a54a;
+  --dot: #77e27b;
+  --singularity: #8e5fe6;
+  --control: #4aa3ff;
+
+  /* Radii */
+  --radius: 6px;
+  --radius-lg: 10px;
+}
